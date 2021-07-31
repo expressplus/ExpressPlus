@@ -1,4 +1,6 @@
 // author: Ulvi Memmedov
+'use strict';
+
 const Core = require('../Core/expressCore');
     
 const Service = Core();
