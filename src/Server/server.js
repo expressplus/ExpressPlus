@@ -1,25 +1,23 @@
 // author: Ulvi Memmedov
-const Service = require('../Core/expressCore');
-const Router = require('../Core/expressCore')
+const Core = require('../Core/expressCore');
+    
+const Service = Core();
+
+const Router = Core.Router();
 
 /**
+@Use
+Service.use(UrlEncoded({{extended:true}}))
 @AviableParams
 {extends : true or false}
 UrlEncoded({extended:true})
 * */
-const UrlEncoded = Service.urlencoded;
+const UrlEncoded = Core.urlencoded;
 
 /**
 @Use
 Service.use(JsonParser)
 * */
-const JsonParser = Service.json();
+const JsonParser = Core.json();
 
-/**
-@AviableParams
-Calback function
-@RequiredParams
-Port
-ProServer.listen(Port, Calback)
-* */
-module.exports = { Service,UrlEncoded,JsonParser,Router }
+module.exports = { Router,UrlEncoded,JsonParser,Service}

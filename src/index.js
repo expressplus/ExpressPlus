@@ -2,7 +2,8 @@
 'use strict';
 
 try {
-    const {Global,SetGlobal,DeleteGlobal} = require('./Global/global');
+
+    const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
 
     const { Mysql, Mongoose } = require('./Database/database');
 
@@ -20,7 +21,7 @@ try {
 
     const Validation = require('./Validation/validation');
 
-    const { Service, JsonParser, UrlEncoded,Service,Router } = require('./Server/server');
+    const {Service,Router, JsonParser, UrlEncoded } = require('./Server/server');
 
     module.exports = {
         Service,
@@ -28,9 +29,7 @@ try {
         JsonParser,
         UrlEncoded,
         Handler,
-        Static,
         CookieParser,
-        Set,
         Helmet,
         Cors,
         Validation,
