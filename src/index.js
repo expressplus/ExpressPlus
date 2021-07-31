@@ -3,6 +3,8 @@
 
 try {
 
+    const Multer = require('./Multer/index');
+
     const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
 
     const { Mysql, Mongoose } = require('./Database/database');
@@ -38,7 +40,8 @@ try {
         Mongoose,
         Global,
         SetGlobal,
-        DeleteGlobal
+        DeleteGlobal,
+        Multer
     }
 
 } catch (error) {
