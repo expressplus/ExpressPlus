@@ -43,4 +43,5 @@ Router.get("/",(request,response) => response.json("Hello Express.Js Plus");
 
 Service.use(Router).listen(port,calback)
 ```
-## <a target="_blank" href="https://expressplus.github.io/doc.html">Docs</a>
+## Docs
+<a target="_blank" href="https://expressplus.github.io/doc.html">https://expressplus.github.io/doc.html</a>
