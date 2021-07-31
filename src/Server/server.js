@@ -1,28 +1,19 @@
 // author: Ulvi Memmedov
-
-
-const http = require('http');
-
-const express = require('express');
-
-const Service = express();
-
-const Static = express.static
-
-const Set = Service.set
+const Service = require('../Core/expressCore');
+const Router = require('../Core/expressCore')
 
 /**
 @AviableParams
 {extends : true or false}
 UrlEncoded({extended:true})
 * */
-const UrlEncoded = express.urlencoded;
+const UrlEncoded = Service.urlencoded;
 
 /**
 @Use
 Service.use(JsonParser)
 * */
-const JsonParser = express.json();
+const JsonParser = Service.json();
 
 /**
 @AviableParams
@@ -31,6 +22,4 @@ Calback function
 Port
 ProServer.listen(Port, Calback)
 * */
-const ProServer = http.createServer(Service);
-
-module.exports = { ProServer,Service,UrlEncoded,JsonParser,Static,Set }
+module.exports = { Service,UrlEncoded,JsonParser,Router }

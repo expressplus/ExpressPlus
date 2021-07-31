@@ -1,6 +1,7 @@
 // author: Ulvi Memmedov
-try {
+'use strict';
 
+try {
     const {Global,SetGlobal,DeleteGlobal} = require('./Global/global');
 
     const { Mysql, Mongoose } = require('./Database/database');
@@ -8,8 +9,6 @@ try {
     const { Helmet, Cors } = require('./Security/security');
 
     const CookieParser = require('./CookieParser/cookieParser');
-
-    const Router = require('./Route/route');
 
     const Apicache = require('./Caching/caching');
 
@@ -21,10 +20,9 @@ try {
 
     const Validation = require('./Validation/validation');
 
-    const { ProServer, Service, JsonParser, UrlEncoded, Static, Set } = require('./Server/server');
+    const { Service, JsonParser, UrlEncoded,Service,Router } = require('./Server/server');
 
     module.exports = {
-        ProServer,
         Service,
         Router,
         JsonParser,

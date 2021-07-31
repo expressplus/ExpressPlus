@@ -1,4 +1,11 @@
 # ExpressJs+
+  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).
+
+  [![NPM Version][npm-image]][npm-url]
+  [![NPM Downloads][downloads-image]][downloads-url]
+  [![Linux Build][ci-image]][ci-url]
+  [![Windows Build][appveyor-image]][appveyor-url]
+  [![Test Coverage][coveralls-image]][coveralls-url]
 
 
 ## Usage
@@ -15,20 +22,20 @@ npm install -g @ulvimemmeedov/expressjsplus
 
 ## Create Router And Server
 ES5
-```javascript
+```js
 const { Service }  = require('@ulvimemmeedov/expressjsplus');
 
 Service.get('/',(request,response) => response.json("Hello Express.Js Plus")).listen(2000);
 ```
 ES6
-```javascript
+```js
 import { Service } from '@ulvimemmeedov/expressjsplus';
 
 Service.get('/',(request,response) => response.json("Hello Express.Js Plus")).listen(2000);
 ```
 ## Router
 
-```javascript
+```js
 import { Service , Router}  from '@ulvimemmeedov/expressjsplus';
 
 Router.get("/",(request,response) => response.json("Hello Express.Js Plus");
