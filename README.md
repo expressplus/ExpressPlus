@@ -1,5 +1,8 @@
 # ExpressJs+
  All you need tool in one web framework for [NodeJs](http://nodejs.org).
+##
+[NPM](https://www.npmjs.com/package/@ulvimemmeedov/expressjsplus)
+[WEB](https://expressplus.github.io/)
 
 ## Usage
 
