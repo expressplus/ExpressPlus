@@ -1,12 +1,5 @@
 # ExpressJs+
- All you need tool in one web framework for [node](http://nodejs.org).
-
-  [![NPM Version][npm-image]][npm-url]
-  [![NPM Downloads][downloads-image]][downloads-url]
-  [![Linux Build][ci-image]][ci-url]
-  [![Windows Build][appveyor-image]][appveyor-url]
-  [![Test Coverage][coveralls-image]][coveralls-url]
-
+ All you need tool in one web framework for [NodeJs](http://nodejs.org).
 
 ## Usage
 
