@@ -20,6 +20,6 @@ const UrlEncoded = Core.urlencoded;
 @Use
 Service.use(JsonParser)
 * */
-const JsonParser = Core.json();
+const JsonParser = Core.json;
 
 module.exports = { Router,UrlEncoded,JsonParser,Service}
