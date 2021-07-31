@@ -7,5 +7,5 @@ const morgan = require('morgan');
 /**
 @LoggerMorgan
 **/
-module.exports = Logger = morgan;
+module.exports = morgan;
 
