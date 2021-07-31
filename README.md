@@ -3,7 +3,6 @@
 ##
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![npm version](https://badge.fury.io/js/%40ulvimemmeedov%2Fexpressjsplus.svg)](https://badge.fury.io/js/%40ulvimemmeedov%2Fexpressjsplus)
-[![GitHub version](https://badge.fury.io/gh/expressplus%2FExpressPlus.svg)](https://badge.fury.io/gh/expressplus%2FExpressPlus)
   <a href="https://www.npmjs.com/package/@ulvimemmeedov/expressjsplus"><img src="https://img.shields.io/npm/dm/@ulvimemmeedov/expressjsplus" alt="npm downloads"></a>
 ## Usage
 
