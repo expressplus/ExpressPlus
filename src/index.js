@@ -11,8 +11,6 @@ try {
 
     const CookieParser = require('./CookieParser/cookieParser');
 
-    const Apicache = require('./Caching/caching');
-
     const Logger = require('./Logger/logger');
 
     const SwaggerUi = require('./ApiDocs/swaggerUi');
@@ -36,7 +34,6 @@ try {
         AsyncHandler,
         Logger,
         SwaggerUi,
-        Apicache,
         Mysql,
         Mongoose,
         Global,
