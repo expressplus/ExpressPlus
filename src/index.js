@@ -3,7 +3,7 @@
 
 try {
 
-    const Multer = require('./Multer/index');
+    const Multer = require('./Multer/multer');
 
     const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
 
