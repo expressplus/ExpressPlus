@@ -1,6 +1,6 @@
 {
   "name": "@ulvimemmeedov/expressjsplus",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "All you need tool in one web framework for NodeJs.",
   "main": "src/index.js",
   "bin": "src/index.js",
@@ -51,7 +51,8 @@
     "mongoose": "^5.13.5",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
