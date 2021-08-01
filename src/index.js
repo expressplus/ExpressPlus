@@ -3,6 +3,8 @@
 
 try {
 
+    const MongoController = require('./Controllers/mongoBaseController')
+    
     const Multer = require('./Multer/multer');
 
     const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
@@ -41,7 +43,8 @@ try {
         Global,
         SetGlobal,
         DeleteGlobal,
-        Multer
+        Multer,
+        MongoController
     }
 
 } catch (error) {
