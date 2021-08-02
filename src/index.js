@@ -3,7 +3,7 @@
 
 try {
 
-    const MongoController = require('./Controllers/Mongo/MongoBaseController.js')
+    const MongoController = require('./Controllers/Mongo/MongoBaseController')
     
     const Multer = require('./Multer/multer');
 
