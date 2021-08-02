@@ -1,4 +1,4 @@
-const { AsyncHandler } = require('express-async-handler');
+const AsyncHandler = require('express-async-handler');
 
 module.exports = class MongoController2 {
 
