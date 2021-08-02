@@ -1,6 +1,6 @@
 {
   "name": "@ulvimemmeedov/expressjsplus",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "All you need tool in one web framework for NodeJs.",
   "main": "src/index.js",
   "bin": "src/index.js",
@@ -52,9 +52,18 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "mysql": "^2.18.1",
-    "swagger-ui-express": "^4.1.6"
+    "node-notifier": "^10.0.0",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@types/express": "^4.17.3",
+    "@types/uuid": "^7.0.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.0.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
   }
 }

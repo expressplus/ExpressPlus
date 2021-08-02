@@ -3,8 +3,16 @@
 
 try {
 
+    const dotenv = require('dotenv');
+
+    dotenv.config();
+
+    const Notifer = require('./Notifer/notifer');
+
+    const ExpressToolBar = require('./Toolbar/src/index');
+
     const MongoController = require('./Controllers/Mongo/MongoBaseController')
-    
+
     const Multer = require('./Multer/multer');
 
     const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
@@ -23,9 +31,22 @@ try {
 
     const Validation = require('./Validation/validation');
 
-    const {Service,Router, JsonParser, UrlEncoded } = require('./Server/server');
-    
+    const { Service, Router, JsonParser, UrlEncoded, Static } = require('./Server/server');
+
+    if (process.env.EXPRESSPLUS == "true") {
+
+        Notifer.notify({
+
+            title: 'Message from Express+',
+            message: 'Service is Running'
+
+        });
+    }
+
     module.exports = {
+        dotenv,
+        Static,
+        ExpressToolBar,
         Service,
         Router,
         JsonParser,

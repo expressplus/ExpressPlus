@@ -2,7 +2,9 @@
 'use strict';
 
 const Core = require('express');
-    
+
+const Static = Core.static
+
 const Service = Core();
 
 const Router = Core.Router();
@@ -22,4 +24,4 @@ Service.use(JsonParser)
 * */
 const JsonParser = Core.json;
 
-module.exports = { Router,UrlEncoded,JsonParser,Service}
+module.exports = {Static, Router,UrlEncoded,JsonParser,Service}
