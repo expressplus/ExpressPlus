@@ -2,16 +2,24 @@
 'use strict';
 
 try {
+    
+    const dotenv = require('dotenv');
+
+    dotenv.config();
+
+    const Notifer = require('./Notifer/notifer');
+
+    const ExpressPlusDebug = require('./Toolbar/src/index');
 
     const MongoController = require('./Controllers/Mongo/MongoBaseController')
-    
+
     const Multer = require('./Multer/multer');
 
     const { Global, SetGlobal, DeleteGlobal } = require('./Global/global');
 
     const { Mysql, Mongoose } = require('./Database/database');
 
-    const { Helmet, Cors } = require('./Security/security');
+    const { Helmet, Cors,Guard ,csurf } = require('./Security/security');
 
     const CookieParser = require('./CookieParser/cookieParser');
 
@@ -23,9 +31,24 @@ try {
 
     const Validation = require('./Validation/validation');
 
-    const {Service,Router, JsonParser, UrlEncoded } = require('./Server/server');
-    
+    const { Service, Router, JsonParser, UrlEncoded, Static } = require('./Server/server');
+
+    if (process.env.EXPRESSPLUS == "true") {
+
+        Notifer.notify({
+
+            title: 'Message from Express+',
+            message: 'Service is Running'
+
+        });
+    }
+
     module.exports = {
+        csurf,
+        Guard,
+        dotenv,
+        Static,
+        ExpressPlusDebug,
         Service,
         Router,
         JsonParser,
@@ -48,10 +71,13 @@ try {
     }
 
 } catch (error) {
-    console.log(
+    console.error(
+         
         `
-        error: Something went wrong \n 
-        msg: ${error}
+                  Express+
+
+         msg: Something Went Wrong :( \n 
+         ${Error(error)}
 
         `
     );
