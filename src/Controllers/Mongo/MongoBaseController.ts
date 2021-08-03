@@ -1,3 +1,5 @@
+// author: Ulvi Memmedov
+'use strict';
 const AsyncHandler = require('express-async-handler');
 
 module.exports = class MongoController2 {

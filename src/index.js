@@ -2,14 +2,14 @@
 'use strict';
 
 try {
-
+    
     const dotenv = require('dotenv');
 
     dotenv.config();
 
     const Notifer = require('./Notifer/notifer');
 
-    const ExpressToolBar = require('./Toolbar/src/index');
+    const ExpressPlusDebug = require('./Toolbar/src/index');
 
     const MongoController = require('./Controllers/Mongo/MongoBaseController')
 
@@ -19,7 +19,7 @@ try {
 
     const { Mysql, Mongoose } = require('./Database/database');
 
-    const { Helmet, Cors } = require('./Security/security');
+    const { Helmet, Cors,Guard ,csurf } = require('./Security/security');
 
     const CookieParser = require('./CookieParser/cookieParser');
 
@@ -44,9 +44,11 @@ try {
     }
 
     module.exports = {
+        csurf,
+        Guard,
         dotenv,
         Static,
-        ExpressToolBar,
+        ExpressPlusDebug,
         Service,
         Router,
         JsonParser,
@@ -69,10 +71,13 @@ try {
     }
 
 } catch (error) {
-    console.log(
+    console.error(
+         
         `
-        error: Something went wrong \n 
-        msg: ${error}
+                  Express+
+
+         msg: Something Went Wrong :( \n 
+         ${Error(error)}
 
         `
     );
