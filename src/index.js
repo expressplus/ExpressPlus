@@ -9,7 +9,7 @@ try {
 
     const Notifer = require('./Notifer/notifer');
 
-    const ExpressPlusDebug = require('./Toolbar/src/index');
+    const ExpressPlusDebug = require('./DebugPanel/index');
 
     const MongoController = require('./Controllers/Mongo/MongoBaseController')
 
