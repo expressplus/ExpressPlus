@@ -3,6 +3,8 @@
 
 try {
     
+    const io = require('./SocketIo/SocketIo');
+
     const dotenv = require('dotenv');
 
     dotenv.config();
@@ -46,6 +48,7 @@ try {
     }
 
     module.exports = {
+        io,
         MysqlController,
         csurf,
         Guard,
