@@ -19,6 +19,8 @@ try {
 
     const { Mysql, Mongoose } = require('./Database/database');
 
+    const MysqlController = require('./Controllers/Mysql/MysqlBaseController')
+
     const { Helmet, Cors,Guard ,csurf } = require('./Security/security');
 
     const CookieParser = require('./CookieParser/cookieParser');
@@ -44,6 +46,7 @@ try {
     }
 
     module.exports = {
+        MysqlController,
         csurf,
         Guard,
         dotenv,
