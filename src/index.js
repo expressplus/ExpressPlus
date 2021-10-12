@@ -2,7 +2,8 @@
 'use strict';
 
 try {
-    
+    const PlusOrm = require('./Orm/orm.js')
+
     const io = require('./SocketIo/SocketIo');
 
     const dotenv = require('dotenv');
@@ -48,6 +49,7 @@ try {
     }
 
     module.exports = {
+        PlusOrm,
         io,
         MysqlController,
         csurf,
